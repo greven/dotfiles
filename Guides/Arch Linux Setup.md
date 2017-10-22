@@ -299,3 +299,155 @@ For convenience, `localectl` may be used to set console keymap.
 
 Add users
 ---------
+
+Create a new system user so we can stop using the roon one. Pattern:
+
+    # useradd -m -G additional_groups -s login_shell username
+
+Example:
+
+    # useradd -m -G wheel,users greven
+
+Create a password for this user:
+
+    # passwd greven
+
+Install `sudo`.
+
+    # pacman -S sudo
+
+Give the new user `sudo` powers.
+
+    # EDITOR=nano visudo
+
+Un-comment this line in this file:
+
+    %wheel ALL=(ALL) ALL
+
+Save and close the file with ‘Ctrl+x’ and then type ‘y’ to confirm.
+
+X-server
+--------
+
+Update the pacman repositories:
+
+    $ sudo pacman -Sy
+
+Let's install the display server, graphics drivers and additional components.
+
+    $ sudo pacman -S xorg-server xorg-server-utils
+
+It will ask you to install libgl package, choose the one for your GPU.
+
+Intel GPU:
+
+    $ sudo pacman -S xf86-video-intel
+
+Nvidia (latest cards only, for older cards check the [Arch wiki](https://wiki.archlinux.org/index.php/NVIDIA):
+
+    $ sudo pacman -S nvidia nvidia-libgl
+
+ATI/AMD:
+
+    $ sudo pacman -S xf86-video-ati lib32-mesa-libgl
+
+If you have input devices like a touch-pad install the following:
+
+    $ sudo pacman -S xf86-input-synaptics
+
+Pacman
+------
+
+Arch Linux is now properly installed.
+Here are some pacman commands to install packages on Arch.
+
+Update repositories:
+
+    $ sudo pacman –Sy
+
+Updates the repositories and runs system updates:
+
+    $ sudo pacman –Syu
+
+To install a package:
+
+    $ sudo pacman –S package_name
+
+For multiple packages:
+
+    $ sudo pacman -S virtualbox-guest-dkms virtualbox-guest-dkms virtualbox-guest-modules-lts
+
+Alternative syntax:
+
+    $ sudo pacman -S virtualbox-guest-{dkms,iso,modules,dkms,utils}
+
+Optimize Pacman:
+
+    $ sudo pacman-optimize
+
+Removing packages: 
+
+    $ sudo pacman –R package_name
+
+To remove a package and its dependencies:
+
+    $ sudo pacman –Rns
+
+Clean pacman cached packages:
+
+pacman -Sc
+
+Arch User Repository
+--------------------
+
+If a package is not in the offial repository there is always the Arch User Repository (AUR).
+Manually compiling a package from AUR is easy.
+
+Find the package in [AUR](https://aur.archlinux.org/).
+
+Clone the package using Git:
+
+    $ git clone <package-query>.git
+
+Change directory into the  downloaded package:
+
+    $ cd package-query
+
+Run the makepkg command:
+
+    $ makepkg –sri
+
+### Yaourt
+
+Alternatively to manual compiling packages from AUR we can use Yaourt.
+
+Install Yaourt from AUR first.
+
+Refresh repository info:
+
+    $ yaourt -Syu --aur
+
+This command sync database, upgrades installed packages and AUR packages.
+
+Yaourt can also install packages that are already available in the official repos.
+
+    $ yaourt -S <package-query>
+
+If you want to search only AUR skipping packages from official repo then use without –S or use –aur flag:
+
+    $ yaourt --aur <package-query>
+
+After Install
+-------------
+
+We already have a working Arch Linux system, there are several steps we can take to improve our system, like installing
+a graphical client like Gnome:
+
+    $ sudo pacman -S gnome gnome-extra
+
+If you are going to use only Gnome on this system then you need to enable Gnome Display Manager aka gdm and set it to start at system reboot:
+
+    $ sudo systemctl start gdm.service
+    $ sudo systemctl enable gdm.service
+
+
