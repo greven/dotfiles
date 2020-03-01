@@ -1,5 +1,3 @@
-My Linux configuration files.
+# My Linux / MacOS configuration files.
 
-![Screenshot 1](/Screenshots/1.png "Gnome 2")
-
-![Screenshot 2](/Screenshots/2.png "Neofetch")
+![Screenshot 1](/screenshots/1.png "Pop!_OS")
