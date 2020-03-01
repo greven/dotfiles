@@ -60,8 +60,6 @@ if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
     steam
 fi
 
-
-
 # -------------------------------------------------------
 # => Fonts
 # -------------------------------------------------------
@@ -96,7 +94,6 @@ if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
   cd "$dotfiles_path"/files
   cp -r `ls -d .??* | egrep -v '(.git$|.gitmodules)'` $HOME
 fi
-
 
 # Set fish as default shell
 chsh -s `which fish`
