@@ -86,7 +86,7 @@ echo '=> Get dotfiles (https://github.com/greven/dotfiles)'
 dotfiles_path="`(mktemp -d)`"
 
 # Clone the repository
-git clone --recursive https://github.com/greven/dotfiles.git "$dotfiles_path"
+git clone https://github.com/greven/dotfiles.git "$dotfiles_path"
 
 # Copy all dotfiles
 cd "$dotfiles_path"/files
