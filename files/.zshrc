@@ -3,6 +3,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Aliases
+alias neo='neofetch --block_range 0 15 --off'
+
 # Python Virtulenvwrapper
 export WORKON_HOME=~/.envs
 
