@@ -1,14 +1,24 @@
 #!/usr/bin/env bash
 
 # Setup a newly installed Debiant Distro (Ubuntu, Pop!_OS...)
+#
+# Based on rougeth[0] script.
+#
+#
+# [0] - https://gist.github.com/rougeth/8108714
+#
+# Usage:
+#   $ cd /tmp
+#   $ wget https://gist.githubusercontent.com/raw/61a108013a6cc742575ec72dba2e635f/setup_deb.sh
+#   $ chmod +x setup_deb.sh .sh
+#   $ ./setup_deb.sh .sh
 
 echo '------------------------------------------------------------------------'
 echo '=> Debiant post-install script'
 echo '------------------------------------------------------------------------'
 
 # Variables
-parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
-
+NVM_VERSION=0.35.2
 
 # -----------------------------------------------------------------------------
 # => Add PPAs (Personal Package Archives)
@@ -22,24 +32,46 @@ sudo apt update -qq
 sudo apt-get dist-upgrade -y
 
 # -------------------------------------------------------
-# => Utilities
+# => Deps & Utilities
 # -------------------------------------------------------
 
 # Aptitude packages
 sudo apt install -y --no-install-recommends \
-build-essential \
-snapd \
-gnome-tweaks \
-fish \
-htop \
-neofetch \
-neovim
+  build-essential \
+  software-properties-common \
+  apt-transport-https \
+  snapd \
+  curl \
+  wget \
+  fish \
+  htop \
+  neofetch \
+  gnome-tweaks \
+  neovim
 
 # -------------------------------------------------------
 # => Development Packages
 # -------------------------------------------------------
+echo '=> Install favorite applications'
+echo '=> git docker NodeJS VSCode'
+echo -e '=> Are you sure? [Y/n] '
+read confirmation
 
-# NodeJS, Git, Docker, VS Code
+confirmation=$(echo $confirmation | tr '[:lower:]' '[:upper:]')
+if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
+
+# nvm (NodeJS)
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash
+nvm install --lts --latest-npm
+
+# VS Code
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+sudo apt install -y \
+  git \
+  code
+fi
 
 # -------------------------------------------------------
 # => Apps
@@ -51,13 +83,13 @@ read confirmation
 
 confirmation=$(echo $confirmation | tr '[:lower:]' '[:upper:]')
 if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
-  # Snaps
-  sudo snap install spotify telegram-desktop
-
   # deb packages
   sudo apt install -y --no-install-recommends \
     chromium-browser \
     steam
+
+  # Snaps
+  sudo snap install spotify telegram-desktop
 fi
 
 # -------------------------------------------------------
@@ -74,7 +106,7 @@ fi
 # profile_path="/apps/gnome-terminal/profiles/Default"
 
 # -------------------------------------------------------
-# => Wrap up
+# => Configurations
 # -------------------------------------------------------
 
 # Dot files
