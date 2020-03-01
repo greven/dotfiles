@@ -81,16 +81,22 @@ fi
 
 # Dot files
 echo '=> Get dotfiles (https://github.com/greven/dotfiles)'
+echo -e '=> Are you sure? [Y/n] '
+read confirmation
 
-# Create a tmp folder
-dotfiles_path="`(mktemp -d)`"
+confirmation=$(echo $confirmation | tr '[:lower:]' '[:upper:]')
+if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
+  # Create a tmp folder
+  dotfiles_path="`(mktemp -d)`"
 
-# Clone the repository
-git clone https://github.com/greven/dotfiles.git "$dotfiles_path"
+  # Clone the repository
+  git clone git@github.com:greven/dotfiles.git "$dotfiles_path"
 
-# Copy all dotfiles
-cd "$dotfiles_path"/files
-cp -r `ls -d .??* | egrep -v '(.git$|.gitmodules)'` $HOME
+  # Copy all dotfiles
+  cd "$dotfiles_path"/files
+  cp -r `ls -d .??* | egrep -v '(.git$|.gitmodules)'` $HOME
+fi
+
 
 # Set fish as default shell
 chsh -s `which fish`
