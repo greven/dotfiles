@@ -23,7 +23,8 @@ NVM_VERSION=0.35.2
 # -----------------------------------------------------------------------------
 # => Add PPAs (Personal Package Archives)
 # -----------------------------------------------------------------------------
-sudo apt-add-repository ppa:fish-shell/release-3   # Fish Shell
+sudo apt-add-repository ppa:fish-shell/release-3 # Fish Shell
+sudo apt-add-repository ppa:papirus/papirus # Papirus Icons
 
 # -------------------------------------------------------
 # => System Update
@@ -70,7 +71,9 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 
 sudo apt install -y \
   git \
-  code
+  code \
+  docker \
+  docker-compose
 fi
 
 # -------------------------------------------------------
@@ -83,12 +86,12 @@ read confirmation
 
 confirmation=$(echo $confirmation | tr '[:lower:]' '[:upper:]')
 if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
-  # deb packages
+  # Install deb packages
   sudo apt install -y --no-install-recommends \
     chromium-browser \
     steam
 
-  # Snaps
+  # Install Snaps
   sudo snap install spotify telegram-desktop
 fi
 
@@ -101,6 +104,11 @@ fi
 # -------------------------------------------------------
 # => Customization
 # -------------------------------------------------------
+
+# Icons
+sudo apt install -y papirus-icon-theme
+
+# Themes
 
 # Gnome Terminal
 # profile_path="/apps/gnome-terminal/profiles/Default"
