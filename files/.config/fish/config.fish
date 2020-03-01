@@ -4,7 +4,8 @@ function nvm
     if functions -q bass
         if test -e brew
             bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
-        # else
+        else
+            bass source ~/.nvm/nvm.sh --no-use ';' nvm $argv
         end
     end
 end
