@@ -9,19 +9,26 @@ echo '------------------------------------------------------------------------'
 # Variables
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
-sudo apt update
+
+# -----------------------------------------------------------------------------
+# => Add PPAs (Personal Package Archives)
+# -----------------------------------------------------------------------------
+sudo apt-add-repository ppa:fish-shell/release-3   # Fish Shell
+
+# -------------------------------------------------------
+# => System Update
+# -------------------------------------------------------
+sudo apt update -qq
+sudo apt-get dist-upgrade -y
 
 # -------------------------------------------------------
 # => Utilities
 # -------------------------------------------------------
 
-# PPAs
-sudo apt-add-repository ppa:fish-shell/release-3
-
-sudo apt update
-
 # Aptitude packages
-sudo apt install -y \
+sudo apt install -y --no-install-recommends \
+build-essential \
+snapd \
 gnome-tweaks \
 fish \
 htop \
@@ -29,7 +36,7 @@ neofetch \
 neovim
 
 # -------------------------------------------------------
-# => Development
+# => Development Packages
 # -------------------------------------------------------
 
 # NodeJS, Git, Docker, VS Code
@@ -37,8 +44,23 @@ neovim
 # -------------------------------------------------------
 # => Apps
 # -------------------------------------------------------
+echo '=> Install favorite applications'
+echo '=> chromium-browser spotify steam telegram'
+echo -e '=> Are you sure? [Y/n] '
+read confirmation
 
-# - Spotify, Telegram
+confirmation=$(echo $confirmation | tr '[:lower:]' '[:upper:]')
+if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
+  # Snaps
+  sudo snap install spotify telegram-desktop
+
+  # deb packages
+  sudo apt install -y --no-install-recommends \
+    chromium-browser \
+    steam
+fi
+
+
 
 # -------------------------------------------------------
 # => Fonts
@@ -50,20 +72,27 @@ neovim
 # => Customization
 # -------------------------------------------------------
 
-# - Icons, Themes, etc.
+# Gnome Terminal
+# profile_path="/apps/gnome-terminal/profiles/Default"
 
 # -------------------------------------------------------
 # => Wrap up
 # -------------------------------------------------------
 
-# Config files
-cd "$parent_path"
-cp ../files/.gitconfig ~
-cp -r ../files/.config/fish ~/.config/fish
+# Dot files
+echo '=> Get dotfiles (https://github.com/greven/dotfiles)'
 
-sudo apt update && sudo apt upgrade -y
+# Create a tmp folder
+dotfiles_path="`(mktemp -d)`"
+
+# Clone the repository
+git clone --recursive https://github.com/greven/dotfiles.git "$dotfiles_path"
+
+# Copy all dotfiles
+cd "$dotfiles_path"/files
+cp -r `ls -d .??* | egrep -v '(.git$|.gitmodules)'` $HOME
 
 # Set fish as default shell
 chsh -s `which fish`
 
-# Cleanup
+echo 'Done.'
