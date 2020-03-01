@@ -63,4 +63,7 @@ cp -r ../files/.config/fish ~/.config/fish
 
 sudo apt update && sudo apt upgrade -y
 
+# Set fish as default shell
+chsh -s `which fish`
+
 # Cleanup
