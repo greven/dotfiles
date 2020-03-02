@@ -2,16 +2,13 @@
 
 # Setup a newly installed Debiant Distro (Ubuntu, Pop!_OS...)
 #
-# Based on rougeth[0] script.
-#
-#
-# [0] - https://gist.github.com/rougeth/8108714
 #
 # Usage:
 #   $ cd /tmp
 #   $ wget https://gist.githubusercontent.com/raw/61a108013a6cc742575ec72dba2e635f/setup_deb.sh
 #   $ chmod +x setup_deb.sh .sh
 #   $ ./setup_deb.sh .sh
+#
 
 echo '------------------------------------------------------------------------'
 echo '=> Debiant post-install script'
@@ -110,9 +107,6 @@ sudo apt install -y papirus-icon-theme
 
 # Themes
 
-# Gnome Terminal
-# profile_path="/apps/gnome-terminal/profiles/Default"
-
 # -------------------------------------------------------
 # => Configurations
 # -------------------------------------------------------
@@ -130,10 +124,23 @@ if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
   # Clone the repository
   git clone git@github.com:greven/dotfiles.git "$dotfiles_path"
 
-  # Copy all dotfiles
+  # Copy all dotfiles in the files directory to home
   cd "$dotfiles_path"/files
-  cp -r `ls -d .??* | egrep -v '(.git$|.gitmodules)'` $HOME
+  cp -r `ls -d .??*` $HOME
 fi
+
+# Gnome Terminal Settings
+GNOME_TERMINAL_PROFILE="$(gsettings get org.gnome.Terminal.ProfilesList default)"
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ font 'Iosevka 11'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ default-size-columns 132
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ default-size-rows 36
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ use-theme-colors false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ use-transparent-background true
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ foreground-color 'rgb(148,163,165)'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ background-color 'rgb(10,11,17)'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ background-transparency-percent 1
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$GNOME_TERMINAL_PROFILE/ palette ['rgb(40,42,54)', 'rgb(243,127,151)', 'rgb(90,222,205)', 'rgb(242,162,114)', 'rgb(136,151,244)', 'rgb(197,116,221)', 'rgb(121,230,243)', 'rgb(253,253,253)', 'rgb(65,68,88)', 'rgb(255,73,113)', 'rgb(24,227,200)', 'rgb(255,128,55)', 'rgb(85,111,255)', 'rgb(176,67,209)', 'rgb(63,220,238)', 'rgb(190,190,193)']
+
 
 # Set fish as default shell
 chsh -s `which fish`
