@@ -90,6 +90,9 @@ if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
 
   # Install Snaps
   sudo snap install spotify telegram-desktop
+
+  # Install Linuxbrew (Homebrew for Linux)
+  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
 fi
 
 # -------------------------------------------------------
@@ -148,7 +151,17 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ palette $PALETTE_JUNO
 
 
+# -------------------------------------------------------
+# => Fish Shell
+# -------------------------------------------------------
+
 # Set fish as default shell
 chsh -s `which fish`
+
+# Fetch fisher plugins
+fisher
+
+# Linux brew programs
+brew install hub
 
 echo 'Done.'
