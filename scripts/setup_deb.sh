@@ -42,6 +42,7 @@ sudo apt install -y --no-install-recommends \
   curl \
   wget \
   fish \
+  ripgrep \
   htop \
   neofetch \
   gnome-tweaks \
@@ -141,7 +142,7 @@ PALETTE_JUNO='#282A36:#F37F97:#5ADECD:#F2A272:#8897F4:#C574DD:#79E6F3:#FDFDFD:#4
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ default-size-columns 132
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ default-size-rows 36
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ use-system-font false
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ font 'Iosevka 11'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ font 'Iosevka 10'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ audible-bell false
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ use-theme-colors false
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ use-transparent-background true
