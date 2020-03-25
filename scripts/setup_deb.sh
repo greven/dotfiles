@@ -131,6 +131,11 @@ if [[ $confirmation == 'YES' || $confirmation == 'Y' ]]; then
   # Copy all dotfiles in the files directory to home
   cd "$dotfiles_path"/files
   cp -r `ls -d .??*` $HOME
+
+  # Copy bin files to .local bin folder
+  cd "$dotfiles_path"/bin
+  cp -r * $HOME/.local/bin
+
 fi
 
 # Gnome Terminal Settings
