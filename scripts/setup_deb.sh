@@ -144,8 +144,8 @@ JUNO_TEXT='#94A3A5'
 JUNO_BG='#0A0B11'
 PALETTE_JUNO='#282A36:#F37F97:#5ADECD:#F2A272:#8897F4:#C574DD:#79E6F3:#FDFDFD:#414458:#FF4971:#18E3C8:#FF8037:#556FFF:#B043D1:#3FDCEE:#BEBEC1'
 
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ default-size-columns 132
-gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ default-size-rows 36
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ default-size-columns 160
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ default-size-rows 46
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ use-system-font false
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ font 'Iosevka 10'
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:${GNOME_TERMINAL_PROFILE:1:-1}/ audible-bell false
