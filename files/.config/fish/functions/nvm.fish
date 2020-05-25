@@ -230,3 +230,6 @@ function _nvm_find_up -a path file
         return 1
     end
 end
+
+set -x NVM_DIR ~/.nvm
+nvm use default --silent
