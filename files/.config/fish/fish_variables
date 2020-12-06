@@ -1,14 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_init_2_39_8:\x1d
-SETUVAR __fish_init_2_3_0:\x1d
-SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
-SETUVAR _fisher_edc_2F_bass_files:/Users/greven/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/greven/\x2econfig/fish/functions/bass\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fish_2D_nvm_files:/Users/greven/\x2econfig/fish/functions/__nvm_run\x2efish\x1e/Users/greven/\x2econfig/fish/functions/node\x2efish\x1e/Users/greven/\x2econfig/fish/functions/npm\x2efish\x1e/Users/greven/\x2econfig/fish/functions/npx\x2efish\x1e/Users/greven/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/greven/\x2econfig/fish/functions/nvm_alias_command\x2efish\x1e/Users/greven/\x2econfig/fish/functions/nvm_alias_function\x2efish\x1e/Users/greven/\x2econfig/fish/functions/yarn\x2efish\x1e/Users/greven/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/greven/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/greven/\x2econfig/fish/completions/fisher\x2efish
-SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/greven/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/greven/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/greven/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_plugins:edc/bass\x1ejorgebucaran/fish\x2dnvm\x1ejorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_edc_2F_bass_files:/Users/nuno/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/nuno/\x2econfig/fish/functions/bass\x2efish
+SETUVAR _fisher_franciscolourenco_2F_done_files:/Users/nuno/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/nuno/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_markcial_2F_upto_files:/Users/nuno/\x2econfig/fish/functions/upto\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/upto\x2efish
+SETUVAR _fisher_patrickf1_2F_colored__man__pages_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/man\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
@@ -32,10 +31,9 @@ SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrbl
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen
 SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell
+SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell\x0aType\x20\x60help\x60\x20for\x20instructions\x20on\x20how\x20to\x20use\x20fish
 SETUVAR fish_key_bindings:fish_default_key_bindings
 SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/Users/greven/\x2econfig/nvm/15\x2e2\x2e1/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin\x1e/home/greven/\x2econfig/nvm/14\x2e3\x2e0/bin\x1e/home/linuxbrew/\x2elinuxbrew/bin\x1e/home/linuxbrew/\x2elinuxbrew/sbin
