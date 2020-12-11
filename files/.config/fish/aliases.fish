@@ -37,6 +37,7 @@ abbr -a gcp git cherry-pick
 abbr -a gd git diff
 abbr -a gl git graph
 abbr -a gs git state
+abbr -a gp git push
 abbr -a ga git commit --amend
 
 # Autocomplete the tags and branches as commands.
