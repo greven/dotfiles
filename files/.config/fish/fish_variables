@@ -24,11 +24,12 @@ SETUVAR _fish_abbr_r:rails
 SETUVAR _fisher_edc_2F_bass_files:/Users/nuno/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/nuno/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_franciscolourenco_2F_done_files:/Users/nuno/\x2econfig/fish/conf\x2ed/done\x2efish
 SETUVAR _fisher_gazorby_2F_fish_2D_abbreviation_2D_tips_files:/Users/nuno/\x2econfig/fish/functions/__abbr_tips_bind_newline\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/__abbr_tips_bind_space\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/__abbr_tips_init\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/abbr_tips\x2efish
+SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/nuno/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_markcial_2F_upto_files:/Users/nuno/\x2econfig/fish/functions/upto\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/upto\x2efish
 SETUVAR _fisher_patrickf1_2F_colored__man__pages_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/man\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto\x1egazorby/fish\x2dabbreviation\x2dtips
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto\x1egazorby/fish\x2dabbreviation\x2dtips\x1ejorgebucaran/autopair\x2efish
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
