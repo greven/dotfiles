@@ -1,7 +1,7 @@
 # Add .local bin to PATH
 set PATH {$HOME}/.local/bin $PATH
 
-# Elixir
+# Elixir bin
 set -x ERL_LIBS /usr/lib/elixir/lib
 
 # Don't show the greeting message on fish boot.
@@ -26,9 +26,7 @@ set -x BROWSER open
 # Source the aliases in ~/.config/fish/aliases.fish.
 test -f ~/.config/fish/aliases.fish; and source ~/.config/fish/aliases.fish
 
-## MacOS
-
-# Source iTerm2 integration.
+# Source MacOS iTerm2 integration.
 if test -f ~/.config/fish/iterm2.fish
     source ~/.config/fish/iterm2.fish
 end
