@@ -34,14 +34,11 @@ abbr -a gc git commit
 abbr -a gco git commit
 abbr -a gcp git cherry-pick
 abbr -a gd git diff
-abbr -a gl git short
+abbr -a gl git graph
 abbr -a gs git status
 abbr -a ga git commit --amend
-abbr -a "g+" git +
-abbr -a "g-" git--
 
-# Autocomplete the tags and branches as commands. The git function lets you do
-# that and having completion for it is pretty cool.
+# Autocomplete the tags and branches as commands.
 complete -f -c git -a '(__fish_git_branches)' --description 'Branch'
 complete -f -c git -a '(__fish_git_tags)' --description 'Tag'
 
