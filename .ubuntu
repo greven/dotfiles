@@ -2,7 +2,6 @@
 
 # Setup a newly installed Debiant Distro (Ubuntu, Pop!_OS...)
 #
-#
 # Usage:
 #   $ cd /tmp
 #   $ wget https://gist.githubusercontent.com/raw/61a108013a6cc742575ec72dba2e635f/setup_deb.sh
