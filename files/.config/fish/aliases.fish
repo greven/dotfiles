@@ -37,9 +37,6 @@ abbr -a gd git diff
 abbr -a gl git short
 abbr -a gs git status
 abbr -a ga git commit --amend
-
-abbr -a "g[" git [
-abbr -a "g]" git ]
 abbr -a "g+" git +
 abbr -a "g-" git--
 

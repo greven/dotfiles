@@ -1,0 +1,59 @@
+[user]
+	name = Nuno Freire
+	email = greven.pt@gmail.com
+
+[alias]
+    state = status -s
+    aa = add --all
+    co = checkout
+	cp = cherry-pick
+    di = diff
+    branches = branch -a
+    remotes = remote
+    tags = tag -l
+    sprout = checkout -B
+    amend = commit --amend
+    back = checkout -
+    unstash = stash pop
+    track = follow
+    pullff = pull --ff-only
+    rewind = reset --hard HEAD~1
+    uncommit = reset HEAD^
+    ri = rebase --interactive --autosquash --autostash
+    su = submodule update
+    incoming = !git fetch -q github develop && git log HEAD..FETCH_HEAD
+    outgoing = !git fetch -q github develop && git log FETCH_HEAD..HEAD
+    wtf = what-the-hell-just-happened
+    wth = what-the-hell-just-happened
+    last = !git show | awk \"NR==1 {print \\$2}\"
+    short = log --graph --pretty=oneline --abbrev-commit
+    lg = log --graph \"--pretty=format:%C(yellow bold)%h%Creset by %C(red)%an%Creset (%ar)%C(cyan bold)%d%Creset%n%s%n%b\"
+    jsonlog = log --pretty=format:'{%n  \"commit\": \"%H\",%n  \"abbreviated_commit\": \"%h\",%n  \"tree\": \"%T\",%n  \"abbreviated_tree\": \"%t\",%n  \"parent\": \"%P\",%n  \"abbreviated_parent\": \"%p\",%n  \"refs\": \"%D\",%n  \"encoding\": \"%e\",%n  \"subject\": \"%s\",%n  \"sanitized_subject_line\": \"%f\",%n  \"body\": \"%b\",%n  \"commit_notes\": \"%N\",%n  \"verification_flag\": \"%G?\",%n  \"signer\": \"%GS\",%n  \"signer_key\": \"%GK\",%n  \"author\": {%n    \"name\": \"%aN\",%n    \"email\": \"%aE\",%n    \"date\": \"%aD\"%n  },%n  \"commiter\": {%n    \"name\": \"%cN\",%n    \"email\": \"%cE\",%n    \"date\": \"%cD\"%n  }%n},'
+
+[help]
+	autocorrect = 1
+
+[core]
+	filemode = true
+	logallrefupdates = true
+	whitespace = space-before-tab, trailing-space
+
+[commit]
+	cleanup = scissors
+
+[color]
+	ui = auto
+
+[branch]
+	autosetupmerge = true
+
+[diff]
+	renames = copies
+	mnemonicprefix = true
+	compactionHeuristic = true
+
+[push]
+	default = current
+
+[credential]
+	helper = osxkeychain
