@@ -32,10 +32,11 @@ alias docker-daemon 'open --background -a Docker'
 # Git subcommands shortcuts.
 abbr -a gc git commit
 abbr -a gco git commit
+abbr -a gaa git aa
 abbr -a gcp git cherry-pick
 abbr -a gd git diff
 abbr -a gl git graph
-abbr -a gs git status
+abbr -a gs git state
 abbr -a ga git commit --amend
 
 # Autocomplete the tags and branches as commands.
