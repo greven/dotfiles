@@ -1,5 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ABBR_TIPS_PROMPT:\x5cn\U0001f4a1\x20\x5ce\x5b1m\x7b\x7b\x20\x2eabbr\x20\x7d\x7d\x5ce\x5b0m\x20\x3d\x3e\x20\x7b\x7b\x20\x2ecmd\x20\x7d\x7d
+SETUVAR --export ABBR_TIPS_REGEXES:\x28\x5e\x28\x5cw\x2b\x5cs\x2b\x29\x2b\x28\x2d\x7b1\x2c2\x7d\x29\x5cw\x2b\x29\x28\x5cs\x5cS\x2b\x29\x1e\x28\x5e\x28\x5cs\x3f\x28\x5cw\x2d\x3f\x29\x2b\x29\x7b3\x7d\x29\x2e\x2a\x1e\x28\x5e\x28\x5cs\x3f\x28\x5cw\x2d\x3f\x29\x2b\x29\x7b2\x7d\x29\x2e\x2a\x1e\x28\x5e\x28\x5cs\x3f\x28\x5cw\x2d\x3f\x29\x2b\x29\x7b1\x7d\x29\x2e\x2a
+SETUVAR --export __ABBR_TIPS_KEYS:d\x1eg\x1eg\x2b\x1eg\x2d\x1e\x27g\x5b\x27\x1e\x27g\x5d\x27\x1ega\x1egc\x1egco\x1egcp\x1egd\x1egl\x1egs\x1eh\x1em\x1er\x1ea__\x2e\x2e\x1ea__\x2e\x2e\x2e\x1ea__\x2e\x2e\x2e\x2e\x1ea__\x2e\x2e\x2e\x2e\x2e\x1ea__\x2e\x2e\x2e\x2e\x2e\x2e\x1ea__apt\x2dget\x1ea__cat\x1ea__docker\x2ddaemon\x1ea__l\x1ea__neo\x1ea__pip\x1ea__python\x1ea__wth
+SETUVAR --export __ABBR_TIPS_VALUES:docker\x1egit\x1egit\x20\x2b\x1egit\x2d\x2d\x1egit\x20\x5b\x1egit\x20\x5d\x1egit\x20commit\x20\x2d\x2damend\x1egit\x20commit\x1egit\x20commit\x1egit\x20cherry\x2dpick\x1egit\x20diff\x1egit\x20short\x1egit\x20status\x1eheroku\x1emake\x1erails\x1ecd\x20\x2e\x2e\x1ecd\x20\x2e\x2e/\x2e\x2e\x1ecd\x20\x2e\x2e/\x2e\x2e/\x2e\x2e\x1ecd\x20\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e\x1ecd\x20\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e/\x2e\x2e\x1esudo\x20apt\x2dget\x1eccat\x1eopen\x20\x2d\x2dbackground\x20\x2da\x20Docker\x1els\x20\x2dalhF\x1eneofetch\x20\x2d\x2dblock_range\x200\x2015\x20\x2d\x2doff\x1epip3\x1epython3\x1egit\x2dwhat\x2dthe\x2dhell\x2djust\x2dhappened\x2esh
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_d:docker
 SETUVAR _fish_abbr_g:git
@@ -19,11 +23,12 @@ SETUVAR _fish_abbr_m:make
 SETUVAR _fish_abbr_r:rails
 SETUVAR _fisher_edc_2F_bass_files:/Users/nuno/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/nuno/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_franciscolourenco_2F_done_files:/Users/nuno/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_gazorby_2F_fish_2D_abbreviation_2D_tips_files:/Users/nuno/\x2econfig/fish/functions/__abbr_tips_bind_newline\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/__abbr_tips_bind_space\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/__abbr_tips_init\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/abbr_tips\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/nuno/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_markcial_2F_upto_files:/Users/nuno/\x2econfig/fish/functions/upto\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/upto\x2efish
 SETUVAR _fisher_patrickf1_2F_colored__man__pages_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/man\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto\x1egazorby/fish\x2dabbreviation\x2dtips
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
