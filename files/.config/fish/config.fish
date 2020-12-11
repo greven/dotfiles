@@ -28,5 +28,7 @@ test -f ~/.config/fish/aliases.fish; and source ~/.config/fish/aliases.fish
 
 # Source MacOS iTerm2 integration.
 if test -f ~/.config/fish/iterm2.fish
+    test -e ~/.iterm2_shell_integration.fish; and source ~/.iterm2_shell_integration.fish; or true
     source ~/.config/fish/iterm2.fish
 end
+

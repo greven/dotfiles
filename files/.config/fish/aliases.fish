@@ -8,9 +8,6 @@ alias ...... "cd ../../../../.."
 # Shorthand for ls
 alias l 'ls -alhF'
 
-# Let there be colors in cat!
-alias cat ccat
-
 # Sudo apt-get as it is always what you want.
 alias apt-get "sudo apt-get"
 
