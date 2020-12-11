@@ -4,23 +4,31 @@ set PATH {$HOME}/.local/bin $PATH
 # Elixir
 set -x ERL_LIBS /usr/lib/elixir/lib
 
-# MacOS
-test -e {$HOME}/.iterm2_shell_integration.fish
-and source {$HOME}/.iterm2_shell_integration.fish
+# Don't show the greeting message on fish boot.
+set -x fish_greeting ''
 
-## Aliases
+# Add color support for terminals pretending to be xterm.
+test $TERM = xterm; and set -x TERM xterm-256color
 
-# Shell
-alias l 'ls -alhF'
+# Make sure we have a unicode capable LANG and LC_CTYPE so the unicode
+# characters does not look like crap on OSX and other environments.
+set -x LANG en_US.UTF-8
+set -x LC_CTYPE en_US.UTF-8
 
-# Python as Python3
-alias python python3
-alias pip pip3
+# Don't let fish masquerade itself as other shells.
+set -x SHELL (which fish)
 
-# Scripts
-alias wth 'git-what-the-hell-just-happened.sh'
+# Help out programs spawning editors based on $EDITOR.
+set -x EDITOR code
+set -x PAGER less
+set -x BROWSER open
 
-# Apps
-alias g git
-alias docker-daemon 'open --background -a Docker'
-alias neo 'neofetch --block_range 0 15 --off'
+# Source the aliases in ~/.config/fish/aliases.fish.
+test -f ~/.config/fish/aliases.fish; and source ~/.config/fish/aliases.fish
+
+## MacOS
+
+# Source iTerm2 integration.
+if test -f ~/.config/fish/iterm2.fish
+    source ~/.config/fish/iterm2.fish
+end
