@@ -22,8 +22,8 @@
     uncommit = reset HEAD^
     ri = rebase --interactive --autosquash --autostash
     su = submodule update
-    incoming = !git fetch -q github develop && git log HEAD..FETCH_HEAD # Incoming changes
-    outgoing = !git fetch -q github develop && git log FETCH_HEAD..HEAD # Outgoing changes
+    incoming = !git fetch -q origin develop && git log HEAD..FETCH_HEAD # Incoming changes
+    outgoing = !git fetch -q origin develop && git log FETCH_HEAD..HEAD # Outgoing changes
     graph = log --graph --pretty=oneline --abbrev-commit # Pretty log
     last = !git show | awk \"NR==1 {print \\$2}\"
     branch-name = !git rev-parse --abbrev-ref HEAD # Get the current branch name
