@@ -3,6 +3,7 @@
 	email = greven.pt@gmail.com
 
 [alias]
+    branch-name = !git rev-parse --abbrev-ref HEAD
     state = status -s
     aa = add --all
     co = checkout
