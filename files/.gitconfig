@@ -3,7 +3,6 @@
 	email = greven.pt@gmail.com
 
 [alias]
-    branch-name = !git rev-parse --abbrev-ref HEAD
     state = status -s
     aa = add --all
     co = checkout
@@ -19,13 +18,20 @@
     track = follow
     pullff = pull --ff-only
     rewind = reset --hard HEAD~1
+    unstage = reset HEAD # Unstage any files that have been added to the staging area
     uncommit = reset HEAD^
     ri = rebase --interactive --autosquash --autostash
     su = submodule update
-    incoming = !git fetch -q github develop && git log HEAD..FETCH_HEAD
-    outgoing = !git fetch -q github develop && git log FETCH_HEAD..HEAD
-    graph = log --graph --pretty=oneline --abbrev-commit
+    incoming = !git fetch -q github develop && git log HEAD..FETCH_HEAD # Incoming changes
+    outgoing = !git fetch -q github develop && git log FETCH_HEAD..HEAD # Outgoing changes
+    graph = log --graph --pretty=oneline --abbrev-commit # Pretty log
     last = !git show | awk \"NR==1 {print \\$2}\"
+    branch-name = !git rev-parse --abbrev-ref HEAD # Get the current branch name
+    publish = !git push -u origin $(git branch-name) # Push the current branch to the remote "origin" and set it to track the upstream branch
+    unpublish = !git push origin :$(git branch-name) # Delete the remote version of the current branch
+    code-review = difftool origin/master...
+    diffc = diff --cached # Show changes that have been staged
+    sync = !git fetch --all --prune && git rebase -p --autostash $1 # Update branch with the upstream
 
 [help]
 	autocorrect = 1
