@@ -24,10 +24,14 @@ abbr -a m make
 abbr -a d docker
 abbr -a g git
 abbr -a h heroku
+abbr -a n npm
 
 # Apps.
 alias neo 'neofetch --block_range 0 15 --off'
 alias docker-daemon 'open --background -a Docker'
+
+# Utils.
+alias timestamp 'date -u "+%Y%m%d%H%M%S"'
 
 # Git subcommands shortcuts.
 abbr -a gc git commit
