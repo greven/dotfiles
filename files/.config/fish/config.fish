@@ -8,7 +8,8 @@ set -x ERL_LIBS /usr/lib/elixir/lib
 set -x fish_greeting ''
 
 # Add color support for terminals pretending to be xterm.
-test $TERM = xterm; and set -x TERM xterm-256color
+test $TERM = xterm
+and set -x TERM xterm-256color
 
 # Make sure we have a unicode capable LANG and LC_CTYPE so the unicode
 # characters does not look like crap on OSX and other environments.
@@ -24,11 +25,17 @@ set -x PAGER less
 set -x BROWSER open
 
 # Source the aliases in ~/.config/fish/aliases.fish.
-test -f ~/.config/fish/aliases.fish; and source ~/.config/fish/aliases.fish
+test -f ~/.config/fish/aliases.fish
+and source ~/.config/fish/aliases.fish
+
+# asdf
+source ~/.asdf/asdf.fish
 
 # Source MacOS iTerm2 integration.
 if test -f ~/.config/fish/iterm2.fish
-    test -e ~/.iterm2_shell_integration.fish; and source ~/.iterm2_shell_integration.fish; or true
+    test -e ~/.iterm2_shell_integration.fish
+    and source ~/.iterm2_shell_integration.fish
+    or true
     source ~/.config/fish/iterm2.fish
 end
 
