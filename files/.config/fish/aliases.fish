@@ -29,6 +29,7 @@ abbr -a n npm
 # Apps.
 alias neo 'neofetch --block_range 0 15 --off'
 alias docker-daemon 'open --background -a Docker'
+alias mbrew 'arch -arm64e /opt/homebrew/bin/brew'
 
 # Utils.
 alias timestamp 'date -u "+%Y%m%d%H%M%S"'
@@ -45,8 +46,8 @@ abbr -a gp git push
 abbr -a ga git commit --amend
 
 # Autocomplete the tags and branches as commands.
-complete -f -c git -a '(__fish_git_branches)' --description 'Branch'
-complete -f -c git -a '(__fish_git_tags)' --description 'Tag'
+complete -f -c git -a '(__fish_git_branches)' --description Branch
+complete -f -c git -a '(__fish_git_tags)' --description Tag
 
 function vim
     command nvim -p $argv 2>/dev/null
