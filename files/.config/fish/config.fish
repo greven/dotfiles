@@ -28,6 +28,9 @@ set -x BROWSER open
 test -f ~/.config/fish/aliases.fish
 and source ~/.config/fish/aliases.fish
 
+# brew
+set PATH /opt/homebrew/bin $PATH
+
 # asdf
 source ~/.asdf/asdf.fish
 
