@@ -6,7 +6,7 @@
     state = status -s
     aa = add --all
     co = checkout
-	cp = cherry-pick
+    cp = cherry-pick
     di = diff
     branches = branch -a
     remotes = remote
