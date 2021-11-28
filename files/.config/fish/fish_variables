@@ -1,5 +1,10 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/Users/greven/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/Users/greven/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/Users/greven\x24
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
@@ -21,15 +26,17 @@ SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_gs:git\x20state
 SETUVAR _fish_abbr_h:heroku
 SETUVAR _fish_abbr_m:make
+SETUVAR _fish_abbr_n:npm
 SETUVAR _fish_abbr_r:rails
 SETUVAR _fisher_edc_2F_bass_files:/Users/nuno/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/nuno/\x2econfig/fish/functions/bass\x2efish
 SETUVAR _fisher_franciscolourenco_2F_done_files:/Users/nuno/\x2econfig/fish/conf\x2ed/done\x2efish
+SETUVAR _fisher_jethrokuan_2F_z_files:/Users/greven/\x2econfig/fish/functions/__z\x2efish\x1e/Users/greven/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/greven/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/greven/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/greven/\x2econfig/fish/conf\x2ed/z\x2efish
 SETUVAR _fisher_jorgebucaran_2F_autopair_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/_autopair_backspace\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_insert_left\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_insert_right\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_insert_same\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_autopair_tab\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/autopair\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/nuno/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_list\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e/Users/nuno/\x2econfig/fish/functions/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_markcial_2F_upto_files:/Users/nuno/\x2econfig/fish/functions/upto\x2efish\x1e/Users/nuno/\x2econfig/fish/completions/upto\x2efish
 SETUVAR _fisher_patrickf1_2F_colored__man__pages_2E_fish_files:/Users/nuno/\x2econfig/fish/functions/man\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto\x1ejorgebucaran/autopair\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1eedc/bass\x1ejorgebucaran/nvm\x2efish\x1epatrickf1/colored_man_pages\x2efish\x1efranciscolourenco/done\x1emarkcial/upto\x1ejorgebucaran/autopair\x2efish\x1ejethrokuan/z
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
