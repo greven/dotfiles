@@ -1,6 +1,48 @@
 [user]
 	name = Nuno Freire
 	email = greven.pt@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDgXztbLGyrQMqSAmQdEUrdAiO9/4ztR0pNNqCl1EUl9
+
+[help]
+	autocorrect = 1
+
+[core]
+	filemode = true
+	logallrefupdates = true
+	whitespace = space-before-tab, trailing-space
+
+[commit]
+	cleanup = scissors
+	gpgsign = true
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[color]
+	ui = auto
+
+[branch]
+	autosetupmerge = true
+
+[diff]
+	renames = copies
+	mnemonicprefix = true
+	compactionHeuristic = true
+
+[push]
+	default = current
+
+[credential]
+	helper = osxkeychain
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
 
 [alias]
     state = status -s
@@ -32,31 +74,3 @@
     code-review = difftool origin/master...
     diffc = diff --cached # Show changes that have been staged
     sync = !git fetch --all --prune && git rebase -p --autostash $1 # Update branch with the upstream
-
-[help]
-	autocorrect = 1
-
-[core]
-	filemode = true
-	logallrefupdates = true
-	whitespace = space-before-tab, trailing-space
-
-[commit]
-	cleanup = scissors
-
-[color]
-	ui = auto
-
-[branch]
-	autosetupmerge = true
-
-[diff]
-	renames = copies
-	mnemonicprefix = true
-	compactionHeuristic = true
-
-[push]
-	default = current
-
-[credential]
-	helper = osxkeychain
