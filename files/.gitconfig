@@ -11,15 +11,18 @@
 	logallrefupdates = true
 	whitespace = space-before-tab, trailing-space
 
-[commit]
-	cleanup = scissors
-	gpgsign = true
-
 [gpg]
 	format = ssh
 
 [gpg "ssh"]
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[tag]
+	gpgsign = true
+
+[commit]
+	cleanup = scissors
+	gpgsign = true
 
 [color]
 	ui = auto
