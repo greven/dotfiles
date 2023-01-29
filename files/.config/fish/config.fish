@@ -30,6 +30,7 @@ and source ~/.config/fish/aliases.fish
 
 # brew
 set PATH /opt/homebrew/bin $PATH
+set PATH /opt/homebrew/sbin $PATH
 
 # asdf
 source ~/.asdf/asdf.fish
@@ -41,4 +42,3 @@ if test -f ~/.config/fish/iterm2.fish
     or true
     source ~/.config/fish/iterm2.fish
 end
-
