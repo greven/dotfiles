@@ -1,5 +1,6 @@
-# Add .local bin to PATH
+# Add bin to PATH
 set PATH {$HOME}/.local/bin $PATH
+set PATH {$HOME}/bin $PATH
 
 # Elixir bin
 set -x ERL_LIBS /usr/lib/elixir/lib
@@ -31,6 +32,8 @@ and source ~/.config/fish/aliases.fish
 # brew
 set PATH /opt/homebrew/bin $PATH
 set PATH /opt/homebrew/sbin $PATH
+# OpenSSL
+set PATH /opt/homebrew/opt/openssl@3/bin $PATH
 
 # RTX
 ~/bin/rtx activate fish | source
