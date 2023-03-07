@@ -32,8 +32,11 @@ and source ~/.config/fish/aliases.fish
 # brew
 set PATH /opt/homebrew/bin $PATH
 set PATH /opt/homebrew/sbin $PATH
+
 # OpenSSL
 set PATH /opt/homebrew/opt/openssl@3/bin $PATH
+set -x LDFLAGS -L/opt/homebrew/opt/openssl@3/lib
+set -x CPPFLAGS -I/opt/homebrew/opt/openssl@3/include
 
 # RTX
 ~/bin/rtx activate fish | source
