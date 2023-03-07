@@ -32,8 +32,8 @@ and source ~/.config/fish/aliases.fish
 set PATH /opt/homebrew/bin $PATH
 set PATH /opt/homebrew/sbin $PATH
 
-# asdf
-source ~/.asdf/asdf.fish
+# RTX
+~/bin/rtx activate fish | source
 
 # Source MacOS iTerm2 integration.
 if test -f ~/.config/fish/iterm2.fish
