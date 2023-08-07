@@ -1,6 +1,6 @@
 [user]
 	name = Nuno Freire
-	email = greven.pt@gmail.com
+	email = mail@nuno.site
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDgXztbLGyrQMqSAmQdEUrdAiO9/4ztR0pNNqCl1EUl9
 
 [help]
@@ -40,9 +40,6 @@
 
 [credential]
 	helper = osxkeychain
-
-[pull]
-	rebase = false
 
 [init]
 	defaultBranch = main
