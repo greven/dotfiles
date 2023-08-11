@@ -11,6 +11,13 @@
 	logallrefupdates = true
 	whitespace = space-before-tab, trailing-space
 
+[pull]
+	rebase = true
+	ff = only
+
+[fetch]
+	prune = true
+
 [gpg]
 	format = ssh
 
@@ -34,6 +41,7 @@
 	renames = copies
 	mnemonicprefix = true
 	compactionHeuristic = true
+	colorMoved = zebra
 
 [push]
 	default = current
