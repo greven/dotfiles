@@ -10,6 +10,7 @@
 	filemode = true
 	logallrefupdates = true
 	whitespace = space-before-tab, trailing-space
+	excludesfile = /Users/greven/.gitignore_global
 
 [pull]
 	rebase = true
@@ -37,6 +38,7 @@
 	autosetupmerge = true
 
 [diff]
+    external = difft
 	renames = copies
 	mnemonicprefix = true
 	compactionHeuristic = true
@@ -73,6 +75,7 @@
     su = submodule update
     incoming = !git fetch -q origin develop && git log HEAD..FETCH_HEAD # Incoming changes
     outgoing = !git fetch -q origin develop && git log FETCH_HEAD..HEAD # Outgoing changes
+    gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f" # Delete local branches that have been deleted on the remote
     graph = log --graph --pretty=oneline --abbrev-commit # Pretty log
     timeline = log --pretty='%C(yellow)%h %C(cyan)%cd %Cblue%aN%C(auto)%d %Creset%s' --date=relative --date-order # Timeline log
     last = !git show | awk \"NR==1 {print \\$2}\"
