@@ -38,9 +38,6 @@ set PATH /opt/homebrew/opt/openssl@3/bin $PATH
 set -x LDFLAGS -L/opt/homebrew/opt/openssl@3/lib
 set -x CPPFLAGS -I/opt/homebrew/opt/openssl@3/include
 
-# RTX
-~/bin/rtx activate fish | source
-
 # Source MacOS iTerm2 integration.
 if test -f ~/.config/fish/iterm2.fish
     test -e ~/.iterm2_shell_integration.fish
@@ -48,3 +45,6 @@ if test -f ~/.config/fish/iterm2.fish
     or true
     source ~/.config/fish/iterm2.fish
 end
+
+# Mise (rtx)
+~/.local/bin/mise activate fish | source
