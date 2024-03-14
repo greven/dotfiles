@@ -5,6 +5,9 @@
 # Setup
 # -----
 
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 # Applications
 # ------------
 
@@ -38,6 +41,9 @@ brew install git # version control
 brew install tlrc # tldr (man pages)
 brew install sqlite # database
 brew install thefuck # corrects typos
+
+# Install Mise
+$ curl https://mise.run | sh
 
 # Updates
 # -------
