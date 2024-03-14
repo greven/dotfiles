@@ -48,3 +48,6 @@ end
 
 # Mise (rtx)
 ~/.local/bin/mise activate fish | source
+
+# The fuck!
+thefuck --alias | source
