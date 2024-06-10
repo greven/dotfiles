@@ -86,3 +86,8 @@
     code-review = difftool origin/master...
     diffc = diff --cached # Show changes that have been staged
     sync = !git fetch --all --prune && git rebase -p --autostash $1 # Update branch with the upstream
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
