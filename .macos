@@ -11,6 +11,10 @@
 # Applications
 # ------------
 
+# Newer versions of some tools
+brew install grep
+brew install openssh
+
 # Software
 brew install --cask google-chrome # browser
 brew install --cask firefox # browser
@@ -37,7 +41,9 @@ brew install ngrok # tunneling (reverse proxy)
 brew install neofetch # system information
 
 # Development
+brew install coreutils # GNU core utilities
 brew install git # version control
+brew install git-lfs # large file storage
 brew install tlrc # tldr (man pages)
 brew install sqlite # database
 brew install thefuck # corrects typos
