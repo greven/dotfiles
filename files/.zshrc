@@ -20,9 +20,9 @@ source "${ZINIT_HOME}/zinit.zsh"
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/config.toml)"
 
 # Add in zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-syntax-highlighting
 zinit light Aloxaf/fzf-tab
 
 # Add in snippets
@@ -48,6 +48,8 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080,underline"
+
 ## Shell integrations
 eval "$(fzf --zsh)" # FZF
 eval "$(zoxide init --cmd cd zsh)" # Zoxide
@@ -64,6 +66,7 @@ HISTSIZE=5000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
+
 setopt appendhistory
 setopt sharehistory
 setopt hist_ignore_space
@@ -75,6 +78,7 @@ setopt hist_find_no_dups
 ## Keybindings
 
 bindkey -e # Emacs keybinds
+bindkey '^ ' autosuggest-accept
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
@@ -114,9 +118,9 @@ alias gs='git state'
 alias gl='git graph'
 
 # Apps
-alias neo='neofetch --block_range 0 15 --off'
-alias docker-daemon='open --background -a Docker'
 alias vim='nvim'
+alias docker-daemon='open --background -a Docker'
+alias neo='neofetch --block_range 0 15 --off'
 
 # IP addresses.
 alias localip='ipconfig getifaddr en0'
