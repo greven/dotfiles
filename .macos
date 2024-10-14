@@ -50,6 +50,7 @@ brew install source-highlight # syntax highlighter
 brew install coreutils # GNU core utilities
 brew install git # version control
 brew install git-lfs # large file storage
+brew install gitui # git interface
 brew install tlrc # tldr (man pages)
 brew install sqlite # database
 
