@@ -22,6 +22,7 @@ brew install --cask arc # browser
 brew install --cask iterm2 # terminal
 
 # Fonts
+brew install --cask font-jetbrains-mono # JetBrains Mono
 brew install --cask font-jetbrains-mono-nerd-font # JetBrains Mono Nerd Font
 
 # Utilities
@@ -39,6 +40,7 @@ brew install bpytop # system monitor
 brew install rm-improved # remove files (rm alternative)
 brew install procs # process viewer (ps alternative)
 brew install tmux # terminal multiplexer
+brew install tpm # tmux plugin manager
 brew install rsync # file sync
 brew install ngrok # tunneling (reverse proxy)
 brew install neofetch # system information
