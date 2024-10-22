@@ -16,10 +16,11 @@ brew install grep
 brew install openssh
 
 # Software
-brew install --cask google-chrome # browser
-brew install --cask firefox # browser
 brew install --cask arc # browser
+brew install --cask firefox # browser
+brew install --cask google-chrome # browser
 brew install --cask iterm2 # terminal
+brew install --cask lookaway # break reminder
 
 # Fonts
 brew install --cask font-jetbrains-mono # JetBrains Mono
