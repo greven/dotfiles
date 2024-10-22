@@ -48,6 +48,7 @@ brew install neofetch # system information
 brew install oh-my-posh # terminal prompt
 brew install zoxide # smarter cd
 brew install source-highlight # syntax highlighter
+brew install doggo # modern dig (dns client)
 
 # Development
 brew install coreutils # GNU core utilities
