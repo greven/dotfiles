@@ -57,6 +57,7 @@ brew install git-lfs # large file storage
 brew install gitui # git interface
 brew install tlrc # tldr (man pages)
 brew install sqlite # database
+brew install orbstack # containers
 
 # Install Mise
 $ curl https://mise.run | sh
