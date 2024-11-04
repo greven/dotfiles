@@ -16,11 +16,18 @@ brew install grep
 brew install openssh
 
 # Software
+brew install --cask 1password # password manager
 brew install --cask arc # browser
 brew install --cask firefox # browser
 brew install --cask google-chrome # browser
-brew install --cask iterm2 # terminal
+brew install --cask spotify # music player
 brew install --cask pika # color picker
+brew install --cask appcleaner # app uninstaller
+brew install --cask keka # file archiver
+brew install --cask iterm2 # terminal
+brew install --cask raycast # better spotlight
+brew install --cask visual-studio-code # code editor
+brew install --cask zed # code editor
 
 # Fonts
 brew install --cask font-jetbrains-mono # JetBrains Mono
@@ -58,6 +65,7 @@ brew install gitui # git interface
 brew install tlrc # tldr (man pages)
 brew install sqlite # database
 brew install orbstack # containers
+brew install tailscale # private vpn
 
 # Install Mise
 $ curl https://mise.run | sh
