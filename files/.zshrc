@@ -55,11 +55,6 @@ eval "$(fzf --zsh)" # FZF
 eval "$(zoxide init --cmd cd zsh)" # Zoxide
 eval "$(~/.local/bin/mise activate zsh)" # Mise
 
-# Homebrew path integration
-if [[ -f "/opt/homebrew/bin/brew" ]] then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
 ## History
 
 HISTSIZE=5000
