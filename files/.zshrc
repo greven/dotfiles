@@ -53,7 +53,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080,underline"
 ## Shell integrations
 eval "$(fzf --zsh)" # FZF
 eval "$(zoxide init --cmd cd zsh)" # Zoxide
-eval "$(~/.local/bin/mise activate zsh)" # Mise
 
 ## History
 
