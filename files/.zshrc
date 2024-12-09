@@ -1,11 +1,6 @@
 source $HOME/.exports
 source $HOME/.profile
 
-# MacOS
-if [ Darwin = `uname` ]; then
-  # ... MacOS specific settings
-fi
-
 # Set Zinit (Plugin Manager) directory
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -100,13 +95,13 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Print each PATH entry on a separate line.
+# Print each PATH entry on a separate line
 alias path='echo -e $PATH\\n'
 
 # Scripts
 alias wth='git-what-the-hell-just-happened.sh'
 
-# Git subcommands shortcuts.
+# Git subcommands shortcuts
 alias gc='git commit'
 alias gs='git state'
 alias gl='git graph'
@@ -116,12 +111,18 @@ alias vim='nvim'
 alias docker-daemon='open --background -a Docker'
 alias neo='neofetch --block_range 0 15 --off'
 
-# IP addresses.
+# IP addresses
 alias localip='ipconfig getifaddr en0'
 
-# Show active network interfaces.
+# Show active network interfaces
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
 # Utils
 alias timestamp='date -u "+%Y%m%d%H%M%S"'
 alias week='date +%V'
+
+# MacOS specific settings
+
+if [ Darwin = `uname` ]; then
+  # ... MacOS settings
+fi
