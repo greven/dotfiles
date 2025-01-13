@@ -88,7 +88,7 @@ alias ls='eza'
 # List all files in long format
 alias l='ls -lh --color'
 # List all files in long format, excluding . and ..
-alias la='ls -lAh --color'
+alias la='ls -lAh --no-permissions --octal-permissions --color --git'
 
 # Always enable colored `grep` output
 alias grep='grep --color=auto'
@@ -110,6 +110,9 @@ alias gl='git graph'
 alias vim='nvim'
 alias docker-daemon='open --background -a Docker'
 alias neo='neofetch --block_range 0 15 --off'
+
+# Dev
+alias imix='iex -S mix'
 
 # IP addresses
 alias localip='ipconfig getifaddr en0'
