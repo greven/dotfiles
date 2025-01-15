@@ -5,10 +5,10 @@ if [[ -f "/opt/homebrew/bin/brew" ]] then
 fi
 
 # Mise (rtx)
-if [[ "$TERM_PROGRAM" == "vscode" || "$TERM_PROGRAM" == "zed" ]]; then
-  eval "$($HOME/.local/bin/mise activate zsh --shims)"
-else
+if [[ -o interactive ]] then
   eval "$($HOME/.local/bin/mise activate zsh)"
+else
+  eval "$($HOME/.local/bin/mise activate zsh --shims)"
 fi
 
 # Added by OrbStack: command-line tools and integration
