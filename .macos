@@ -33,6 +33,9 @@ brew install --cask zed # code editor
 brew install --cask font-jetbrains-mono # JetBrains Mono
 brew install --cask font-jetbrains-mono-nerd-font # JetBrains Mono Nerd Font
 
+# MacOS
+brew install leader-key # launcher
+
 # Utilities
 brew install fish # fish shell
 brew install wget # download files

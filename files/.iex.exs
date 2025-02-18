@@ -25,6 +25,17 @@ alive_prompt =
     ":: #{IO.ANSI.cyan()}%counter#{IO.ANSI.reset()}] >"
 
 IEx.configure(
+  width: 80,
+  # auto_reload: true,
+  default_prompt: default_prompt,
+  alive_prompt: alive_prompt,
+  history_size: history_size,
+  inspect: [
+    pretty: true,
+    limit: inspect_limit,
+    width: inspect_width,
+    custom_options: [sort_maps: true]
+  ],
   colors: [
     syntax_colors: [
       number: :light_magenta,
@@ -39,17 +50,7 @@ IEx.configure(
     doc_inline_code: :magenta,
     doc_headings: [:cyan, :underline],
     doc_title: [:cyan, :bright, :underline]
-  ],
-  default_prompt: default_prompt,
-  alive_prompt: alive_prompt,
-  history_size: history_size,
-  inspect: [
-    pretty: true,
-    limit: inspect_limit,
-    width: inspect_width,
-    custom_options: [sort_maps: true]
-  ],
-  width: 80
+  ]
 )
 
 defmodule Helpers do
