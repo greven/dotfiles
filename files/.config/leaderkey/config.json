@@ -1,140 +1,140 @@
 {
-  "type" : "group",
-  "actions" : [
+  "type": "group",
+  "actions": [
     {
-      "type" : "application",
-      "label" : "",
-      "value" : "/Applications/iTerm.app",
-      "key" : "t"
+      "type": "application",
+      "label": "",
+      "value": "/Applications/iTerm.app",
+      "key": "t"
     },
     {
-      "actions" : [
+      "label": "Browsers",
+      "type": "group",
+      "key": "b",
+      "actions": [
         {
-          "type" : "application",
-          "key" : "e",
-          "value" : "/Applications/Mail.app",
-          "label" : ""
+          "type": "application",
+          "key": "s",
+          "value": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app",
+          "label": null
         },
         {
-          "type" : "application",
-          "key" : "i",
-          "label" : "",
-          "value" : "/System/Applications/Music.app"
+          "type": "application",
+          "key": "b",
+          "label": null,
+          "value": "/Applications/Brave Browser.app"
         },
         {
-          "type" : "application",
-          "key" : "m",
-          "label" : "",
-          "value" : "/Applications/Messages.app"
+          "label": null,
+          "type": "application",
+          "key": "z",
+          "value": "/Applications/Zen Browser.app"
+        },
+        {
+          "value": "/Applications/Firefox.app",
+          "label": null,
+          "type": "application",
+          "key": "f"
+        }
+      ]
+    },
+    {
+      "label": "Editors",
+      "type": "group",
+      "key": "e",
+      "actions": [
+        {
+          "value": "/Applications/Visual Studio Code.app",
+          "label": null,
+          "type": "application",
+          "key": "c"
+        },
+        {
+          "value": "/Applications/Zed.app",
+          "key": "z",
+          "type": "application",
+          "label": null
+        }
+      ]
+    },
+    {
+      "label": "Productivity",
+      "key": "p",
+      "type": "group",
+      "actions": [
+        {
+          "label": null,
+          "type": "application",
+          "key": "b",
+          "value": "/Applications/Bear.app"
+        },
+        {
+          "label": null,
+          "value": "/Applications/Things3.app",
+          "key": "t",
+          "type": "application"
+        },
+        {
+          "key": "c",
+          "type": "application",
+          "label": null,
+          "value": "/System/Applications/Calendar.app"
+        },
+        {
+          "label": null,
+          "value": "/System/Applications/Notes.app",
+          "type": "application",
+          "key": "n"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "application",
+          "key": "e",
+          "value": "/Applications/Mail.app",
+          "label": ""
+        },
+        {
+          "type": "application",
+          "key": "i",
+          "label": "",
+          "value": "/System/Applications/Music.app"
+        },
+        {
+          "type": "application",
+          "key": "m",
+          "label": "",
+          "value": "/Applications/Messages.app"
         }
       ],
-      "label" : "Other",
-      "key" : "o",
-      "type" : "group"
+      "label": "Other",
+      "key": "o",
+      "type": "group"
     },
     {
-      "label" : "Raycast",
-      "type" : "group",
-      "key" : "r",
-      "actions" : [
+      "label": "Raycast",
+      "type": "group",
+      "key": "r",
+      "actions": [
         {
-          "label" : "",
-          "type" : "url",
-          "key" : "e",
-          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+          "label": "",
+          "type": "url",
+          "key": "e",
+          "value": "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
         },
         {
-          "value" : "raycast://confetti",
-          "type" : "url",
-          "key" : "p",
-          "label" : ""
+          "value": "raycast://confetti",
+          "type": "url",
+          "key": "p",
+          "label": ""
         },
         {
-          "value" : "raycast://extensions/raycast/system/open-camera",
-          "label" : "",
-          "type" : "url",
-          "key" : "c"
-        }
-      ]
-    },
-    {
-      "label" : "Browsers",
-      "type" : "group",
-      "key" : "b",
-      "actions" : [
-        {
-          "type" : "application",
-          "key" : "s",
-          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app",
-          "label" : null
-        },
-        {
-          "type" : "application",
-          "key" : "b",
-          "label" : null,
-          "value" : "/Applications/Brave Browser.app"
-        },
-        {
-          "label" : null,
-          "type" : "application",
-          "key" : "z",
-          "value" : "/Applications/Zen Browser.app"
-        },
-        {
-          "value" : "/Applications/Firefox.app",
-          "label" : null,
-          "type" : "application",
-          "key" : "f"
-        }
-      ]
-    },
-    {
-      "label" : "Editors",
-      "type" : "group",
-      "key" : "e",
-      "actions" : [
-        {
-          "value" : "/Applications/Visual Studio Code.app",
-          "label" : null,
-          "type" : "application",
-          "key" : "c"
-        },
-        {
-          "value" : "/Applications/Zed.app",
-          "key" : "z",
-          "type" : "application",
-          "label" : null
-        }
-      ]
-    },
-    {
-      "label" : "Productivity",
-      "key" : "p",
-      "type" : "group",
-      "actions" : [
-        {
-          "label" : null,
-          "type" : "application",
-          "key" : "b",
-          "value" : "/Applications/Bear.app"
-        },
-        {
-          "label" : null,
-          "value" : "/Applications/Things3.app",
-          "key" : "t",
-          "type" : "application"
-        },
-        {
-          "key" : "c",
-          "type" : "application",
-          "label" : null,
-          "value" : "/System/Applications/Calendar.app"
-        },
-        {
-          "label" : null,
-          "value" : "/System/Applications/Notes.app",
-          "type" : "application",
-          "key" : "n"
+          "value": "raycast://extensions/raycast/system/open-camera",
+          "label": "",
+          "type": "url",
+          "key": "c"
         }
       ]
     }
