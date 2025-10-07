@@ -7,3 +7,5 @@ python    latest
 rust      latest
 postgres  latest
 just      latest
+pnpm      latest
+zig       latest

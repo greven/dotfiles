@@ -2,7 +2,6 @@
   "actions" : [
     {
       "key" : "t",
-      "label" : "",
       "type" : "application",
       "value" : "/Applications/iTerm.app"
     },
@@ -10,31 +9,26 @@
       "actions" : [
         {
           "key" : "s",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
         },
         {
           "key" : "b",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Brave Browser.app"
         },
         {
           "key" : "z",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Zen Browser.app"
         },
         {
           "key" : "f",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Firefox.app"
         },
         {
           "key" : "c",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Google Chrome.app"
         }
@@ -47,13 +41,11 @@
       "actions" : [
         {
           "key" : "c",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Visual Studio Code.app"
         },
         {
           "key" : "z",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Zed.app"
         }
@@ -66,25 +58,21 @@
       "actions" : [
         {
           "key" : "b",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Bear.app"
         },
         {
           "key" : "t",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Things3.app"
         },
         {
           "key" : "c",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Applications/Calendar.app"
         },
         {
           "key" : "n",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Applications/Notes.app"
         }
@@ -97,19 +85,16 @@
       "actions" : [
         {
           "key" : "e",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Applications/Mail.app"
         },
         {
           "key" : "i",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Applications/Music.app"
         },
         {
           "key" : "m",
-          "label" : "",
           "type" : "application",
           "value" : "/System/Applications/Messages.app"
         }
@@ -122,26 +107,42 @@
       "actions" : [
         {
           "key" : "e",
-          "label" : "",
+          "label" : "Emoji",
           "type" : "url",
           "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
         },
         {
           "key" : "p",
-          "label" : "",
+          "label" : "Confetti",
           "type" : "url",
           "value" : "raycast://confetti"
         },
         {
           "key" : "c",
-          "label" : "",
+          "label" : "Camera",
           "type" : "url",
           "value" : "raycast://extensions/raycast/system/open-camera"
+        },
+        {
+          "key" : "t",
+          "label" : "Toggle Appearance",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/system/toggle-system-appearance"
         }
       ],
       "key" : "r",
       "label" : "Raycast",
       "type" : "group"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/Applications/Spotify.app"
+    },
+    {
+      "key" : "m",
+      "type" : "application",
+      "value" : "/System/Applications/Music.app"
     }
   ],
   "type" : "group"
