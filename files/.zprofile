@@ -14,3 +14,6 @@ fi
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+# Set Elixir mix deps compilation core count
+MIX_OS_DEPS_COMPILE_PARTITION_COUNT=6

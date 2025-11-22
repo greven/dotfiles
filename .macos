@@ -30,24 +30,28 @@ brew install --cask visual-studio-code # code editor
 brew install --cask zed # code editor
 
 # Fonts
+brew install font-symbols-only-nerd-font # Symbols Only Nerd Font
 brew install --cask font-jetbrains-mono # JetBrains Mono
 brew install --cask font-jetbrains-mono-nerd-font # JetBrains Mono Nerd Font
 
 # MacOS
 brew install leader-key # launcher
+brew install jordanbaird-ice # menu bar manager
 
 # Utilities
 brew install fish # fish shell
 brew install wget # download files
 brew install curl # transfer data
 brew install scc # line counter
-brew install fzf # fuzzy finder
 brew install bat # print files (cat alternative)
 brew install eza # list files (ls alternative)
 brew install duf # disk usage (du alternative)
 brew install gping # ping (ping alternative)
 brew install gtop # system monitor
 brew install bpytop # system monitor
+brew install fzf # fuzzy finder
+brew install fd # alternative to find
+brew install ripgrep # alternative to grep
 brew install rm-improved # remove files (rm alternative)
 brew install procs # process viewer (ps alternative)
 brew install tmux # terminal multiplexer
@@ -61,8 +65,13 @@ brew install source-highlight # syntax highlighter
 brew install doggo # modern dig (dns client)
 brew install imagemagick # image utilities
 brew install pngquant # png images compression
-brew install jordanbaird-ice # menu bar manager
 brew install countdown # countdown timer
+brew install ffmpeg # media processing
+brew install sevenzip # file archiver
+brew install poppler # pdf utilities
+brew install jq # json processor
+brew install yazi # file manager
+brew install resvg # svg rendering
 
 # Development
 brew install coreutils # GNU core utilities
