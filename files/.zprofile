@@ -11,9 +11,14 @@ else
   eval "$($HOME/.local/bin/mise activate zsh --shims)"
 fi
 
-# Added by OrbStack: command-line tools and integration
-# This won't be added again if you remove it.
-source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+# Docker
+export PATH=$HOME/.docker/bin:$PATH
+fpath=(/Users/greven/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
 
 # Set Elixir mix deps compilation core count
 MIX_OS_DEPS_COMPILE_PARTITION_COUNT=6
+
+# Set PLUG_EDITOR to open files in VSCode from Elixir
+export PLUG_EDITOR="vscode://file/__FILE__:__LINE__"
