@@ -134,7 +134,7 @@
         ],
         "syntax": {
           "attribute": {
-            "color": "#a6e6e8",
+            "color": "#ffe6e8",
             "font_style": null,
             "font_weight": null
           },
@@ -274,7 +274,7 @@
             "font_weight": null
           },
           "string.special.symbol": {
-            "color": "#a6e6e8",
+            "color": "#bbbbbb",
             "font_style": null,
             "font_weight": null
           },
