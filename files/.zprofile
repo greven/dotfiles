@@ -22,3 +22,6 @@ MIX_OS_DEPS_COMPILE_PARTITION_COUNT=6
 
 # Set PLUG_EDITOR to open files in VSCode from Elixir
 export PLUG_EDITOR="vscode://file/__FILE__:__LINE__"
+
+# opencode
+export PATH=/Users/greven/.opencode/bin:$PATH

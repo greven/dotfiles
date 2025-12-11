@@ -93,42 +93,42 @@
         "players": [
           {
             "cursor": "#f35e6d",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#f35e6d"
           },
           {
             "cursor": "#5adecd",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#5adecd"
           },
           {
             "cursor": "#f2a272",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#f2a272"
           },
           {
             "cursor": "#8897f4",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#8897f4"
           },
           {
             "cursor": "#c574dd",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#c574dd"
           },
           {
             "cursor": "#79e6f3",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#79e6f3"
           },
           {
             "cursor": "#bebec1",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#bebec1"
           },
           {
             "cursor": "#5a83de",
-            "selection": "#b0b0b026",
+            "selection": "#b0b0b030",
             "background": "#5a83de"
           }
         ],

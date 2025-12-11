@@ -82,6 +82,7 @@ brew install tlrc # tldr (man pages)
 brew install sqlite # database
 brew install orbstack # containers
 brew install tailscale # private vpn
+brew install opencode # coding agents cli
 
 # Install Mise
 $ curl https://mise.run | sh
