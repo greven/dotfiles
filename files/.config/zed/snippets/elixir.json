@@ -1,0 +1,43 @@
+{
+  "ok": {
+    "prefix": "ok",
+    "body": "{:ok, $1} $0",
+    "description": "{:ok, ... } ..."
+  },
+
+  "err": {
+    "prefix": "err",
+    "body": "{:error, $1} $0",
+    "description": "{:error, ... } ..."
+  },
+
+  "noreply": {
+    "prefix": "nr",
+    "body": "{:noreply, socket}",
+    "description": "{:noreply, socket}"
+  },
+
+  "Sigil H": {
+    "prefix": "sh",
+    "body": ["~H\"\"\"", "<div>$0</div>", "\"\"\""]
+  },
+
+  "LiveView render": {
+    "prefix": "re",
+    "body": [
+      "@impl true",
+      "def render(assigns) do",
+      "\t~H\"\"\"",
+      "\t\t${1:Text}",
+      "\t\"\"\"",
+      "end$0"
+    ],
+    "description": "def render"
+  },
+
+  "LiveView heex block": {
+    "prefix": "e=",
+    "body": ["<%= $1 %>$0"],
+    "description": "<%= expression %>"
+  }
+}

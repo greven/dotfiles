@@ -20,8 +20,11 @@ compinit
 # Set Elixir mix deps compilation core count
 MIX_OS_DEPS_COMPILE_PARTITION_COUNT=6
 
+export EDITOR=zed
+export VISUAL="$EDITOR"
+
 # Set PLUG_EDITOR to open files in VSCode from Elixir
-export PLUG_EDITOR="vscode://file/__FILE__:__LINE__"
+export PLUG_EDITOR="$EDITOR://file/__FILE__:__LINE__"
 
 # opencode
 export PATH=/Users/greven/.opencode/bin:$PATH

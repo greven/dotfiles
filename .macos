@@ -28,6 +28,7 @@ brew install --cask iterm2 # terminal
 brew install --cask raycast # better spotlight
 brew install --cask visual-studio-code # code editor
 brew install --cask zed # code editor
+    brew install --cask localsend # send files
 
 # Fonts
 brew install font-symbols-only-nerd-font # Symbols Only Nerd Font
@@ -72,6 +73,7 @@ brew install poppler # pdf utilities
 brew install jq # json processor
 brew install yazi # file manager
 brew install resvg # svg rendering
+brew install rclone # file sync
 
 # Development
 brew install coreutils # GNU core utilities
